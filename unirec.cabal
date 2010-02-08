@@ -24,3 +24,6 @@ Library
     Exposed-Modules:
         Data.Generics.Rec
 
+Source-Repository head
+    Type:     git
+    Location: git://github.com/lomeo/unirec
