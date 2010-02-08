@@ -4,11 +4,17 @@ Cabal-Version: >= 1.2
 Build-Type: Simple
 Category: Other
 Maintainer: Dmitry Antonyuk <lomeo.nuke@gmail.com>
+Homepage: http://github.com/lomeo/unirec
 Stability: Experimental
 License: MIT
 License-File: LICENSE
 Author: Dmitry Antonyuk
 Copyright: Dmitry Antonyuk, 2010
+Synopsis: uniplate-like package for cyclic data structures
+Description:
+    unirec provides generic operations for cyclic data structures.
+    .
+    See "Data.Generics.Rec" for more details.
 
 Library
     Hs-Source-Dirs: src
