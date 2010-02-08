@@ -30,7 +30,7 @@ goRec !v = do
 
 -- | Get all distinct children of a node, including itself and all children.
 --
--- >   dataRose = Rose { roseId :: Int, roses :: [Rose] }
+-- >   dataRose = Rose { roseId :: Int, roseBranches :: [Rose] }
 -- >       deriving (Data,Typeable)
 --
 -- >   roses =
