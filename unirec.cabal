@@ -16,6 +16,10 @@ Description:
     .
     See "Data.Generics.Rec" for more details.
 
+Flag test
+    Description: Build the testsuite, and include the tests in the library
+    Default: False
+
 Library
     Hs-Source-Dirs: src
     Build-Depends: base >= 4.0, syb, containers, mtl
@@ -23,7 +27,21 @@ Library
     GHC-Options: -Wall
     Exposed-Modules:
         Data.Generics.Rec
+    if flag(test)
+       Hs-Source-Dirs: test 
 
 Source-Repository head
     Type:     git
     Location: git://github.com/lomeo/unirec
+
+Executable test
+    Main-Is: Test.hs
+    Build-depends: QuickCheck
+    hs-source-dirs: src, test
+    Extensions: DeriveDataTypeable, BangPatterns
+    if flag(test)
+        Buildable: True
+    else
+        Buildable: False
+
+
