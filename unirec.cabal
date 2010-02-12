@@ -1,7 +1,7 @@
 Name: unirec
 Version: 0.0.1
 Cabal-Version: >= 1.2
-Build-Type: Simple
+Build-Type: Generics
 Category: Other
 Maintainer: Dmitry Antonyuk <lomeo.nuke@gmail.com>
 Homepage: http://github.com/lomeo/unirec
@@ -28,7 +28,7 @@ Library
     Exposed-Modules:
         Data.Generics.Rec
     if flag(test)
-       Hs-Source-Dirs: test 
+       Hs-Source-Dirs: test
 
 Source-Repository head
     Type:     git
